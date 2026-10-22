@@ -1,66 +1,491 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Senhas</title>
+
+    <title>3X | 3 Profissões. 1 Futuro.</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <section class="conteudo">
-    <div class="conteudo-titulo">
-        <img src="" alt="imagem de um cadeado">
-        <h2 class="titulo-principal">Gerador de Senhas</h2>
-        <h3 class="titulo-secundario">Gere senhas aleatorias e seguras</h3>
+
+    <!-- FUNDO DECORATIVO -->
+    <div class="background">
+
+        <div class="glow purple"></div>
+        <div class="glow pink"></div>
+        <div class="glow blue"></div>
+
+        <span class="star star1">✦</span>
+        <span class="star star2">✧</span>
+        <span class="star star3">✦</span>
+        <span class="star star4">✧</span>
+
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+
     </div>
-    <div class="conteudo-senha">
-        <label for="senha">Senha</label>
-        <input name="senha" type="text" id="campo-senha">
-    </div>
-    <div class="parametro">
-        <h3 class="parametro-titulo">Personalize sua senha</h3>
-        <div class="parametro-coluna__senha">
-            <div class="parametro-senha">
-                <h4 class="parametro-senha__titulo">Numero de Caracteres</h4>
-                <div class="parametro-senhas-botoes">
-                    <button class="parametro-senha__botao">-</button>
-                    <p class="parametro-senha__texto">12</p>
-                    <button class="parametro-senha__botao">+</button>
-                </div>
+
+
+    <main class="container">
+
+        <!-- =========================
+             CABEÇALHO
+        ========================== -->
+
+        <header class="hero">
+
+            <div class="logo">
+                3X
             </div>
-            <div class="parametro-coluna-senha">
-                <h4 class="parametro-senha__titulo">Caracteristicas da Senha</h4>
-                <div class="parametro-senha-checkbox">
-                    <input name="maiusculo" type="checkbox" class="checkbox" checked>
-                    <label for="">Letras maiusculas</label>
+
+            <div>
+
+                <div class="tag">
+                    TERCEIRÃO • 2026
                 </div>
-                <div class="parametro-senha-checkbox">
-                    <input name="minusculo" type="checkbox" class="checkbox" checked>
-                    <label for="minusculo">Letras minusculas</label>
-                </div>
-                    <div class="parametro-senha-checkbox">
-                    <input name="numero" type="checkbox" class="checkbox" checked>
-                    <label for="numero">Numeros</label>
-                </div>
-                <div class="parametro-senha-checkbox">
-                    <input name="simbolo" type="checkbox" class="checkbox" checked>
-                    <label for="simbolo">Simbolos</label>
-                </div>
+
+                <h1>
+                    3 profissões.
+                    <span>1 futuro.</span>
+                </h1>
+
+                <p>
+                    Diferentes caminhos, uma mesma responsabilidade:
+                    proteger o que importa.
+                </p>
+
             </div>
-            <div class="parametro-senha">
-                <h4 class="parametro-senha__titulo">Força da Senha</h4>
-                <div class="barra"></div>
-                <div class="forca fraca"></div>
-                <div class="parametro-senha-textos">
-                    <p>Fraca</p>
-                    <p>Media</p>
-                    <p>forte</p>
+
+        </header>
+
+
+        <!-- =========================
+             PROFISSÕES
+        ========================== -->
+
+        <section class="professions">
+
+            <!-- CONTADORA -->
+
+            <button
+                class="profession active"
+                data-profession="contadora"
+            >
+
+                <div class="profession-icon">
+                    🧮
                 </div>
-                <p class="entropia"></p>
+
+                <div class="profession-info">
+
+                    <strong>
+                        CONTADORA
+                    </strong>
+
+                    <span>
+                        PROTEGER
+                    </span>
+
+                </div>
+
+                <small>
+                    Informações financeiras
+                </small>
+
+            </button>
+
+
+            <!-- BIOMÉDICA -->
+
+            <button
+                class="profession"
+                data-profession="biomedica"
+            >
+
+                <div class="profession-icon">
+                    🧬
+                </div>
+
+                <div class="profession-info">
+
+                    <strong>
+                        BIOMÉDICA
+                    </strong>
+
+                    <span>
+                        PRESERVAR
+                    </span>
+
+                </div>
+
+                <small>
+                    Informações e dados
+                </small>
+
+            </button>
+
+
+            <!-- ENGENHEIRO -->
+
+            <button
+                class="profession"
+                data-profession="engenheiro"
+            >
+
+                <div class="profession-icon">
+                    ⚙️
+                </div>
+
+                <div class="profession-info">
+
+                    <strong>
+                        ENGENHEIRO
+                    </strong>
+
+                    <span>
+                        CONSTRUIR
+                    </span>
+
+                </div>
+
+                <small>
+                    Sistemas e projetos
+                </small>
+
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             ÁREA PRINCIPAL
+        ========================== -->
+
+        <section class="main-content">
+
+
+            <!-- TEXTO SOBRE O PROJETO -->
+
+            <div class="about">
+
+                <div class="about-tag">
+                    NOSSA IDEIA
+                </div>
+
+                <h2 id="aboutTitle">
+                    Proteger o que importa.
+                </h2>
+
+                <p id="aboutText">
+                    Na Contabilidade, informações financeiras
+                    precisam de proteção e responsabilidade.
+                    Uma senha forte é uma das primeiras camadas
+                    de segurança.
+                </p>
+
+
+                <!-- CARDS DE CONCEITO -->
+
+                <div class="concepts">
+
+                    <div class="concept">
+
+                        <div>
+                            🔐
+                        </div>
+
+                        <section>
+                            <strong>
+                                Segurança
+                            </strong>
+
+                            <span>
+                                Informações protegidas
+                            </span>
+                        </section>
+
+                    </div>
+
+
+                    <div class="concept">
+
+                        <div>
+                            💻
+                        </div>
+
+                        <section>
+                            <strong>
+                                Tecnologia
+                            </strong>
+
+                            <span>
+                                Presente em nossas profissões
+                            </span>
+                        </section>
+
+                    </div>
+
+
+                    <div class="concept">
+
+                        <div>
+                            🚀
+                        </div>
+
+                        <section>
+                            <strong>
+                                Futuro
+                            </strong>
+
+                            <span>
+                                Preparando o próximo passo
+                            </span>
+                        </section>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quote">
+
+                    <span>“</span>
+
+                    <p>
+                        3 pessoas. 3 caminhos.
+                        1 futuro protegido.
+                    </p>
+
+                </div>
+
             </div>
-        </div>
-    </div>
-   </section>
-   <script src="main.js"></script>
+
+
+            <!-- =========================
+                 GERADOR
+            ========================== -->
+
+            <div class="generator">
+
+                <div class="generator-top">
+
+                    <div>
+
+                        <div class="security-tag">
+                            🔐 SEGURANÇA DIGITAL
+                        </div>
+
+                        <h2>
+                            Gerador 3X
+                        </h2>
+
+                        <p id="generatorDescription">
+                            Crie uma senha forte para proteger
+                            suas informações.
+                        </p>
+
+                    </div>
+
+                    <div class="lock">
+                        🔐
+                    </div>
+
+                </div>
+
+
+                <!-- SENHA -->
+
+                <div class="password-area">
+
+                    <input
+                        type="text"
+                        id="password"
+                        placeholder="Sua senha aparecerá aqui"
+                        readonly
+                    >
+
+                    <button id="copyButton">
+                        📋
+                    </button>
+
+                </div>
+
+
+                <!-- FORÇA -->
+
+                <div class="strength">
+
+                    <div class="strength-info">
+
+                        <span>
+                            Força da senha
+                        </span>
+
+                        <strong id="strengthText">
+                            -
+                        </strong>
+
+                    </div>
+
+                    <div class="strength-bar">
+
+                        <div id="strengthBar"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TAMANHO -->
+
+                <div class="option">
+
+                    <div class="option-header">
+
+                        <label>
+                            Tamanho da senha
+                        </label>
+
+                        <strong id="lengthValue">
+                            12
+                        </strong>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        id="length"
+                        min="4"
+                        max="30"
+                        value="12"
+                    >
+
+                </div>
+
+
+                <!-- OPÇÕES -->
+
+                <div class="options">
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="uppercase"
+                            checked
+                        >
+
+                        <span>ABC</span>
+
+                        Maiúsculas
+
+                    </label>
+
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="lowercase"
+                            checked
+                        >
+
+                        <span>abc</span>
+
+                        Minúsculas
+
+                    </label>
+
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="numbers"
+                            checked
+                        >
+
+                        <span>123</span>
+
+                        Números
+
+                    </label>
+
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="symbols"
+                        >
+
+                        <span>#$&</span>
+
+                        Símbolos
+
+                    </label>
+
+                </div>
+
+
+                <!-- GERAR -->
+
+                <button
+                    class="generate"
+                    id="generateButton"
+                >
+                    ✨ Gerar nova senha
+                </button>
+
+
+                <div class="generator-footer">
+
+                    <span>
+                        3X
+                    </span>
+
+                    <p>
+                        Protegendo o futuro digital.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RODAPÉ
+        ========================== -->
+
+        <footer>
+
+            <div class="footer-line"></div>
+
+            <strong>
+                3X
+            </strong>
+
+            <span>
+                3 profissões • 3 caminhos • 1 futuro
+            </span>
+
+            <p>
+                Contadora 🧮 • Biomédica 🧬 • Engenheiro ⚙️
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="main.js"></script>
+
 </body>
+
 </html>
